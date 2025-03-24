@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:whoosh/Features/Presentations/Pages/splashScreen.dart';
+import 'package:whoosh/Features/Presentations/Pages/otpPage.dart';
 import 'package:whoosh/Features/Presentations/Resourses/colours.dart';
 
 void main() {
@@ -15,9 +15,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        scaffoldBackgroundColor: backgroundColour,
+       scaffoldBackgroundColor: whiteColour
       ),
-      home:  SplashScreen(),
+      home:  OTPPage(),
     );
   }
 }
