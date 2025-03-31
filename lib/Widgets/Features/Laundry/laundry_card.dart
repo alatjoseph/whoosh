@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:whoosh/Utils/colours.dart';
 
@@ -7,12 +8,17 @@ class Laundry_Card extends StatelessWidget {
   const Laundry_Card({
     super.key,
     required this.size,
+    required this.title,
   });
 final BoxConstraints size;
+final String title;
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(left: 18.0, right: 18),
+    return InkWell(
+      onTap: (){
+        GoRouter.of(context).push('/laundryDetails', extra: title);
+    
+      },
       child: Container(
         height: size.maxHeight * 0.144,
         decoration: BoxDecoration(
@@ -55,10 +61,10 @@ final BoxConstraints size;
                 ),
               ],
             ),
-    
+          
             // Space between the container and the text
             sizedbox_w10,
-    
+          
             // Shop Name Text
             Padding(
               padding: const EdgeInsets.only(top: 10.0),

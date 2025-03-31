@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:whoosh/Widgets/Features/Laundry/laundry_card.dart';
 
 import '../../../Utils/colours.dart';
 class Nearby_Laundries_List extends StatelessWidget {
@@ -27,7 +28,16 @@ BoxConstraints size;
                   size: size.maxWidth * 0.05,
                   color:blackColour),
             ],
-          )
+          ),
+          ...List.generate(
+            4,
+            (index) => Padding(
+              padding: const EdgeInsets.only(top: 10),
+              child: Laundry_Card(size: size,
+                title: 'Laundry ${index + 1}',
+              ),
+            ),
+          ),
         ],
       ),
     );

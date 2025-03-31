@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:whoosh/Pages/Features/service_details/service_details_page.dart';
+import 'package:whoosh/Utils/colours.dart';
 
 import '../../../Utils/constant_widgets.dart';
 class Scrollable_ServiceList_Widget extends StatelessWidget {
@@ -33,7 +34,7 @@ BoxConstraints size;
                 },
                  child: CircleAvatar(
                    radius: size.maxWidth * 0.09,
-                   //backgroundImage: const AssetImage(loginImage),
+                   backgroundColor: yellowColour,
                  ),
                ),
                Text( 

@@ -3,9 +3,8 @@ import 'package:whoosh/Utils/constant_widgets.dart';
 import 'package:whoosh/Widgets/Features/Home/Scrollable_service_widget.dart';
 import 'package:whoosh/Widgets/Features/Home/appBar_Widget.dart';
 import 'package:whoosh/Widgets/Features/Home/image_slider.dart';
-import 'package:whoosh/Widgets/Features/Home/laundry_card.dart';
-import 'package:whoosh/Widgets/Features/Home/nearby_Laundries_List.dart';
 import 'package:whoosh/Widgets/Features/Home/searchBar_Widget.dart';
+import 'package:whoosh/Widgets/Features/Laundry/nearby_Laundries_List.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -34,13 +33,7 @@ class HomeScreen extends StatelessWidget {
           Nearby_Laundries_List(size: size),
           sizedbox_h10,
           // Displaying multiple Laundry_Card widgets in a ListView
-          ...List.generate(
-            4,
-            (index) => Padding(
-              padding: const EdgeInsets.only(top: 10),
-              child: Laundry_Card(size: size),
-            ),
-          ),
+          
         ],
       );
     });
