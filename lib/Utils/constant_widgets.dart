@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-
+const sizedbox_h5 = SizedBox(
+  height: 5,
+);
 const sizedbox_h10 = SizedBox(
   height: 10,
 );
@@ -8,6 +10,9 @@ const sizedbox_h20 = SizedBox(
 );
 const sizedbox_h30 = SizedBox(
   height: 30,
+);
+const sizedbox_w5 = SizedBox(
+  width: 5,
 );
 const sizedbox_w10 = SizedBox(
   width: 10,

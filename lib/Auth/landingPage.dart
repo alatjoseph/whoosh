@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:whoosh/Features/Presentations/Resourses/colours.dart';
+import 'package:whoosh/Utils/colours.dart';
 
 class OnboardingScreen extends StatelessWidget {
   const OnboardingScreen({super.key});

@@ -1,18 +1,21 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import '../Resourses/colours.dart';
+import '../Utils/colours.dart';
 class CustomButton extends StatelessWidget {
   const CustomButton({
     super.key,
     required this.textsize,
     required this.size,
     required this.text,
+    required this.route,
   });
 
   final double textsize;
   final double size;
   final String text;
+  final String route;
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -28,7 +31,9 @@ class CustomButton extends StatelessWidget {
               borderRadius: BorderRadius.circular(8), 
             ),
           ),
-          onPressed: () {},
+          onPressed: () {
+            context.go(route);
+          },
           child:   Text(
             text,
             style: GoogleFonts.poppins(fontSize: textsize,color: whiteColour,fontWeight: FontWeight.w500), 

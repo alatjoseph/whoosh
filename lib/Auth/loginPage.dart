@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:whoosh/Features/Presentations/Resourses/colours.dart';
-import 'package:whoosh/Features/Presentations/Resourses/constant_widgets.dart';
-import 'package:whoosh/Features/Presentations/Resourses/images.dart';
-import 'package:whoosh/Features/Presentations/Widgets/custom_button.dart';
-import 'package:whoosh/Features/Presentations/Widgets/custom_textfield_widget.dart';
+import 'package:whoosh/Utils/colours.dart';
+import 'package:whoosh/Utils/constant_widgets.dart';
+import 'package:whoosh/Utils/images.dart';
+import 'package:whoosh/Widgets/custom_button.dart';
+import 'package:whoosh/Widgets/custom_textfield_widget.dart';
 
 class Loginpage extends StatelessWidget {
   const Loginpage({super.key});
@@ -54,7 +54,8 @@ class Loginpage extends StatelessWidget {
                         CustomButton(
                             textsize: textsize,
                             text: 'Get OTP',
-                            size: value.maxWidth),
+                            size: value.maxWidth,
+                            route: '/otp',),
                       ],
                     ),
                   ),

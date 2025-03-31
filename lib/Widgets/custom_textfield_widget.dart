@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:whoosh/Features/Presentations/Resourses/colours.dart';
-import 'package:whoosh/Features/Presentations/Resourses/constant_widgets.dart';  
+import 'package:whoosh/Utils/colours.dart';
+import 'package:whoosh/Utils/constant_widgets.dart';  
 class CustomTextFieldWidget extends StatelessWidget {
   
   const CustomTextFieldWidget({

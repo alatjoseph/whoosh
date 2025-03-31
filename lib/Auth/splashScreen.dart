@@ -1,9 +1,9 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:whoosh/Features/Presentations/Pages/landingPage.dart';
-import 'package:whoosh/Features/Presentations/Resourses/colours.dart';
-import 'package:whoosh/Features/Presentations/Resourses/images.dart';
+import 'package:go_router/go_router.dart';
+import 'package:whoosh/Utils/colours.dart';
+import 'package:whoosh/Utils/images.dart';
 
 class SplashScreen extends StatefulWidget {
   @override
@@ -23,12 +23,12 @@ class _SplashScreenState extends State<SplashScreen> {
       double screenWidth = MediaQuery.of(context).size.width;
 
       setState(() {
-        logoSize = screenWidth * 0.8; 
-        topPosition = screenHeight / 2 - logoSize / 2; 
+        logoSize = screenWidth * 0.8;
+        topPosition = screenHeight / 2 - logoSize / 2;
       });
-       Timer(const Duration(seconds: 2), () async{
-     Navigator.of(context).push(MaterialPageRoute(builder: (context) => OnboardingScreen(),));
-    });
+      Timer(const Duration(seconds: 2), () async {
+        context.go('/login');
+      });
     });
   }
 

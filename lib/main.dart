@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:whoosh/Features/Presentations/Pages/otpPage.dart';
-import 'package:whoosh/Features/Presentations/Resourses/colours.dart';
+import 'package:whoosh/Utils/routes.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,12 +11,10 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+     return MaterialApp.router(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-       scaffoldBackgroundColor: whiteColour
-      ),
-      home:  OTPPage(),
+      color: Colors.white,
+      routerConfig: appRouter,
     );
   }
 }
