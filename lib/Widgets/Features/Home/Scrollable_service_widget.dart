@@ -27,7 +27,7 @@ BoxConstraints size;
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => const ServiceDetailsScreen(),
+                      builder: (context) =>  ServiceDetailsScreen(title: 'Service ${index + 1}'),
                     ),
                   );
                 },

@@ -18,7 +18,7 @@ class HomeScreen_AppBar_Widget extends StatelessWidget {
     BuildContext context,
   ) {
     return Container(
-      height: size.maxHeight * 0.14,
+      height: size.maxHeight * 0.13,
       decoration: const BoxDecoration(
         color: primaryColour,
         borderRadius: BorderRadius.only(
@@ -34,7 +34,7 @@ class HomeScreen_AppBar_Widget extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
+                
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Row(

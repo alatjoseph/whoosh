@@ -14,7 +14,7 @@ final BoxConstraints size;
     return Padding(
       padding: const EdgeInsets.only(left: 18.0, right: 18),
       child: Container(
-        height: size.maxHeight * 0.15,
+        height: size.maxHeight * 0.144,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(20),
           border: Border.all(

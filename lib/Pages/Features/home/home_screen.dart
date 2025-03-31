@@ -13,11 +13,11 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return LayoutBuilder(builder: (context, size) {
-      double textsize = size.maxWidth * 0.05;
-      double subtextsize = size.maxWidth * 0.035;
+      double textsize = size.maxWidth * 0.04;
+      double subtextsize = size.maxWidth * 0.03;
 
       return ListView(
-        padding: const EdgeInsets.all(8.0),
+        
         children: [
           HomeScreen_AppBar_Widget(
             subtextsize: subtextsize,
