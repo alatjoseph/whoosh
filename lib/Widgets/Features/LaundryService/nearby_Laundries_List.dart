@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:whoosh/Widgets/Features/Laundry/laundry_card.dart';
+import 'package:whoosh/Widgets/Features/LaundryService/laundry_card.dart';
 
 import '../../../Utils/colours.dart';
 class Nearby_Laundries_List extends StatelessWidget {

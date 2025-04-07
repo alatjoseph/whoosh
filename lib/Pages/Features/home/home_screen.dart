@@ -4,7 +4,7 @@ import 'package:whoosh/Widgets/Features/Home/Scrollable_service_widget.dart';
 import 'package:whoosh/Widgets/Features/Home/appBar_Widget.dart';
 import 'package:whoosh/Widgets/Features/Home/image_slider.dart';
 import 'package:whoosh/Widgets/Features/Home/searchBar_Widget.dart';
-import 'package:whoosh/Widgets/Features/Laundry/nearby_Laundries_List.dart';
+import 'package:whoosh/Widgets/Features/LaundryService/nearby_Laundries_List.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});

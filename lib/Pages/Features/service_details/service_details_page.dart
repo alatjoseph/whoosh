@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:whoosh/Utils/constant_widgets.dart';
-import 'package:whoosh/Widgets/Features/Laundry/laundry_card.dart';
+import 'package:whoosh/Widgets/Features/LaundryService/laundry_card.dart';
 
 import '../../../Utils/colours.dart';
 import '../../../Widgets/Global/appbar_global.dart';
