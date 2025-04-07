@@ -33,7 +33,7 @@ BoxConstraints size;
             4,
             (index) => Padding(
               padding: const EdgeInsets.only(top: 10),
-              child: Laundry_Card(size: size,
+              child: Laundry_Shop_Name_Card(size: size,
                 title: 'Laundry ${index + 1}',
               ),
             ),

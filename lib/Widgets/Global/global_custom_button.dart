@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import '../Utils/colours.dart';
-class CustomButton extends StatelessWidget {
-  const CustomButton({
+import '../../Utils/colours.dart';
+class GlobalCustomButton extends StatelessWidget {
+  const GlobalCustomButton({
     super.key,
     required this.textsize,
     required this.size,

@@ -34,7 +34,7 @@ class ServiceDetailsScreen extends StatelessWidget {
                           10,
                           (index) => Padding(
                             padding: const EdgeInsets.only(top: 10),
-                            child: Laundry_Card(
+                            child: Laundry_Shop_Name_Card(
                               size: constraints,
                               title: 'Laundry ${index + 1}',
                             ),

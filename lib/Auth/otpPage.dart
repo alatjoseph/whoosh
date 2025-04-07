@@ -3,8 +3,9 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:whoosh/Utils/colours.dart';
 import 'package:whoosh/Utils/constant_widgets.dart';
 import 'package:whoosh/Utils/images.dart';
-import 'package:whoosh/Widgets/custom_button.dart';
 import 'package:whoosh/Widgets/otp_field_widget.dart';
+
+import '../Widgets/Global/global_custom_button.dart';
 
 class OTPPage extends StatelessWidget {
   const OTPPage({super.key});
@@ -63,7 +64,7 @@ class OTPPage extends StatelessWidget {
                   OTPField(),
                    Text('Autofill code',style: GoogleFonts.poppins(fontWeight: FontWeight.w600),),
                    SizedBox(height: value.maxHeight*0.1,),
-                  CustomButton(textsize: textsize, size: value.maxWidth, text: 'Verify', route: '/home',),
+                  GlobalCustomButton(textsize: textsize, size: value.maxWidth, text: 'Verify', route: '/home',),
                 ],
               ),
             ),

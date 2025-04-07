@@ -3,7 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:whoosh/Utils/colours.dart';
 import 'package:whoosh/Utils/constant_widgets.dart';
 import 'package:whoosh/Utils/images.dart';
-import 'package:whoosh/Widgets/custom_button.dart';
+import 'package:whoosh/Widgets/Global/global_custom_button.dart';
 import 'package:whoosh/Widgets/custom_textfield_widget.dart';
 
 class Loginpage extends StatelessWidget {
@@ -51,7 +51,7 @@ class Loginpage extends StatelessWidget {
                             icon: Icons.email,
                             hinttext: 'Email ID'), // Third card
                         sizedbox_h30,
-                        CustomButton(
+                        GlobalCustomButton(
                             textsize: textsize,
                             text: 'Get OTP',
                             size: value.maxWidth,

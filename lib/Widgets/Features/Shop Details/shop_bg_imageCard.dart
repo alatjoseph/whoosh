@@ -6,8 +6,8 @@ import 'package:whoosh/Utils/constant_widgets.dart';
 import 'package:whoosh/Widgets/Global/appbar_global.dart';
 
 import '../../../Utils/colours.dart';
-class LaundryPage_ImageCard extends StatelessWidget {
-  const LaundryPage_ImageCard({
+class Shop_Background_ImageCard extends StatelessWidget {
+  const Shop_Background_ImageCard({
     super.key,
     required this.title,
     required this.constraints,

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:whoosh/Utils/colours.dart';
-import 'package:whoosh/Widgets/Features/LaundryService/shop_service_list.dart';
+import 'package:whoosh/Widgets/Features/Shop%20Details/shop_service_list.dart';
 
 import '../../../Utils/constant_widgets.dart';
 
@@ -11,7 +11,7 @@ class DressItemCard extends StatelessWidget {
     required this.widget,
   });
 
-  final AvatarListWidget widget;
+  final ShopServiceListWidget widget;
 
   @override
   Widget build(BuildContext context) {

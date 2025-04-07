@@ -3,15 +3,15 @@ import 'package:flutter/material.dart';
 import 'package:whoosh/Widgets/Features/LaundryService/dress_Item_card.dart';
 
 import '../../../Utils/constant_widgets.dart';
-class AvatarListWidget extends StatefulWidget {
-  AvatarListWidget({required this.size});
+class ShopServiceListWidget extends StatefulWidget {
+  ShopServiceListWidget({required this.size});
   final BoxConstraints size;
 
   @override
-  _AvatarListWidgetState createState() => _AvatarListWidgetState();
+  _ShopServiceListWidgetState createState() => _ShopServiceListWidgetState();
 }
 
-class _AvatarListWidgetState extends State<AvatarListWidget> {
+class _ShopServiceListWidgetState extends State<ShopServiceListWidget> {
   int _selectedIndex = 0;
 
   final List<Map<String, dynamic>> avatars = [

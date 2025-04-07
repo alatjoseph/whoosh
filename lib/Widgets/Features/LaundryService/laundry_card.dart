@@ -4,8 +4,8 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:whoosh/Utils/colours.dart';
 
 import '../../../Utils/constant_widgets.dart';
-class Laundry_Card extends StatelessWidget {
-  const Laundry_Card({
+class Laundry_Shop_Name_Card extends StatelessWidget {
+  const Laundry_Shop_Name_Card({
     super.key,
     required this.size,
     required this.title,
