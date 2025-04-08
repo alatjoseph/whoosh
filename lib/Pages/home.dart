@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:whoosh/Pages/Features/account/account_page.dart';
 import 'package:whoosh/Pages/Features/home/home_screen.dart';
 import 'package:whoosh/Utils/colours.dart';
 
@@ -16,7 +17,7 @@ class _HomepageState extends State<Homepage> {
       const HomeScreen(),
       const Center(child: Text('Activities')),
       const Center(child: Text('Cart')),
-      const Center(child: Text('Account')),
+      const AccountPage(),
   ];
 
   void navigateToPage(int index) {
@@ -39,6 +40,7 @@ class _HomepageState extends State<Homepage> {
         valueListenable: selectedIndex,
         builder: (context, index, child) {
           return BottomNavigationBar(
+            backgroundColor: whiteColour,
             currentIndex: index,
             onTap: navigateToPage,
             type: BottomNavigationBarType.fixed,

@@ -12,3 +12,4 @@ const Color transparentColour=Colors.transparent;
 const Color yellowColour=Colors.amber;
 const Color greenColour=Colors.green;
 const Color redColour= Colors.red;
+const Color accountBlueColour=Color(0xFF077FBD);
