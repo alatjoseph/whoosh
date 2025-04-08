@@ -11,11 +11,14 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-     return MaterialApp.router(
+    return MaterialApp.router(
       debugShowCheckedModeBanner: false,
       color: Colors.white,
       routerConfig: appRouter,
+      theme: ThemeData(
+        scaffoldBackgroundColor:
+            Colors.white, // This sets background color for all Scaffolds
+      ),
     );
   }
 }
-

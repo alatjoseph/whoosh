@@ -12,11 +12,12 @@ class ShopDetailsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return LayoutBuilder(builder: (context, constraints) {
       return Scaffold(
+        
         body: SafeArea(
           child: ListView(
             children: [
               Shop_Background_ImageCard(title: title, constraints: constraints),
-              Container(
+              SizedBox(
                 height: constraints.maxWidth*0.7,
                 child: ListView(children: [
                   ShopServiceListWidget(
@@ -28,7 +29,7 @@ class ShopDetailsScreen extends StatelessWidget {
                   textsize: constraints.maxWidth * 0.05,
                   size: constraints.maxWidth,
                   text: 'Schedule',
-                  route: '/')
+                  route: '/timeSlot')
             ],
           ),
         ),
