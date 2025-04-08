@@ -52,7 +52,7 @@ final Color backgroundColor;
               style: GoogleFonts.poppins(
                   color: blackColour,
                   fontSize: size.maxWidth * 0.05,
-                  fontWeight: FontWeight.w500),
+                  fontWeight: FontWeight.w600),
             ),
           ],
         ),

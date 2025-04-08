@@ -1,5 +1,6 @@
 import 'package:go_router/go_router.dart';
 import 'package:whoosh/Auth/splashScreen.dart';
+import 'package:whoosh/Pages/Features/order/address_page.dart';
 import 'package:whoosh/Pages/Features/order/confirmatiom_page.dart';
 import 'package:whoosh/Pages/Features/order/time_slot.dart';
 import 'package:whoosh/Pages/Features/payment/payment_failed.dart';
@@ -61,6 +62,12 @@ final GoRouter appRouter = GoRouter(
       
     ),
     
+
+    GoRoute(
+      path: '/addresspage',
+      builder: (context, state) =>   AddressPage(),
+      
+    ),
   ],
 );
 

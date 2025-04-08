@@ -11,12 +11,14 @@ class GlobalCustomButton extends StatelessWidget {
     required this.size,
     required this.text,
     required this.route,
+    this.Function
   });
 
   final double textsize;
   final double size;
   final String text;
   final String route;
+  final Function;
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -32,6 +34,10 @@ class GlobalCustomButton extends StatelessWidget {
             ),
           ),
           onPressed: () {
+            if (Function != null) {
+              Function();
+            }
+            
             GoRouter.of(context).push(route);
           },
           child: Center(

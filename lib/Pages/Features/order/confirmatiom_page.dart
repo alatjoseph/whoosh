@@ -48,7 +48,7 @@ class OrderConfirmatiomPage extends StatelessWidget {
                         textsize: constraints.maxWidth * 0.047,
                         size: constraints.maxWidth,
                         text: 'Proceed to Payment',
-                        route: '/orderConfirmation'),
+                        route: '/addresspage'),
             ],
           );
         },
