@@ -2,6 +2,8 @@ import 'package:go_router/go_router.dart';
 import 'package:whoosh/Auth/splashScreen.dart';
 import 'package:whoosh/Pages/Features/order/confirmatiom_page.dart';
 import 'package:whoosh/Pages/Features/order/time_slot.dart';
+import 'package:whoosh/Pages/Features/payment/payment_failed.dart';
+import 'package:whoosh/Pages/Features/payment/payment_success.dart';
 import 'package:whoosh/Pages/Features/shop_details/shop_details.dart';
 import 'package:whoosh/Pages/home.dart';
 import 'package:whoosh/auth/loginPage.dart';
@@ -46,6 +48,19 @@ final GoRouter appRouter = GoRouter(
       builder: (context, state) =>  const OrderConfirmatiomPage(),
       
     ),
+
+    GoRoute(
+      path: '/paymentsuccessful',
+      builder: (context, state) =>  const PaymentSuccess(),
+      
+    ),
+
+    GoRoute(
+      path: '/paymentfailed',
+      builder: (context, state) =>  const PaymentFailed(),
+      
+    ),
+    
   ],
 );
 

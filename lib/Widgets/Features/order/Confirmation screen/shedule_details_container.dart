@@ -25,7 +25,7 @@ BoxConstraints constraints;
               decorationColor: blackColour,
               decorationThickness: 1.5),
         ),
-        sizedbox_h20,
+        sizedbox_h10,
     Row(
       children: [
         SheduledDate_and_TimeCard(

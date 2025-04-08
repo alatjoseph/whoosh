@@ -23,7 +23,7 @@ class OrderConfirmatiomPage extends StatelessWidget {
                 backgroundColor: primaryColour,
                 size: constraints,
               ),
-              sizedbox_h20,
+              sizedbox_h10,
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 18.0),
                 child: Column(
@@ -35,7 +35,7 @@ class OrderConfirmatiomPage extends StatelessWidget {
                         constraints: constraints,
                       ),
                     ),
-                    sizedbox_h20,
+                    sizedbox_h10,
                     Shedule_Details_Container(
                       constraints: constraints,
                     ),
@@ -47,7 +47,7 @@ class OrderConfirmatiomPage extends StatelessWidget {
               GlobalCustomButton(
                         textsize: constraints.maxWidth * 0.047,
                         size: constraints.maxWidth,
-                        text: 'Confirm Your Order',
+                        text: 'Proceed to Payment',
                         route: '/orderConfirmation'),
             ],
           );
