@@ -11,60 +11,68 @@ class Loginpage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: whiteColour,
-      body: LayoutBuilder(builder: (context, value) {
-        double textsize = value.maxWidth * 0.05;
-        double subtextsize = value.maxWidth * 0.035;
-        return SingleChildScrollView(
-          child: Column(
-            children: [
-              Center(
-                child: SizedBox(
-                  height: value.maxHeight * 0.45,
-                  child: const Image(image: AssetImage(loginImage)),
-                ),
-              ),
-              Text(
-                'Access Your Cleaning Hub! ',
-                style: GoogleFonts.poppins(fontSize: textsize),
-              ),
-              Padding(
-                padding: const EdgeInsets.all(28.0),
-                child: SizedBox(
-                  height: 300,
-                  child: SingleChildScrollView(
+    return LayoutBuilder(builder: (context, constraints) {
+      double textsize = constraints.maxWidth * 0.05;
+      double subtextsize = constraints.maxWidth * 0.035;
+      return Scaffold(
+        backgroundColor: whiteColour,
+        body: SingleChildScrollView(
+          child: ConstrainedBox(
+            constraints: BoxConstraints(
+              minHeight: constraints.maxHeight,
+            ),
+            child: IntrinsicHeight(
+              child: Column(
+                children: [
+                  Center(
+                    child: SizedBox(
+                      height: constraints.maxHeight * 0.45,
+                      child: const Image(
+                        image: AssetImage(loginImage),
+                      ),
+                    ),
+                  ),
+                  Text(
+                    'Access Your Cleaning Hub!',
+                    style: GoogleFonts.poppins(fontSize: textsize),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(28.0),
                     child: Column(
                       children: [
                         CustomTextFieldWidget(
-                            subtextsize: subtextsize,
-                            icon: Icons.account_circle,
-                            hinttext: 'Name'),
+                          subtextsize: subtextsize,
+                          icon: Icons.account_circle,
+                          hinttext: 'Name',
+                        ),
                         sizedbox_h10,
                         CustomTextFieldWidget(
-                            subtextsize: subtextsize,
-                            icon: Icons.phone,
-                            hinttext: 'Phone Number'),
+                          subtextsize: subtextsize,
+                          icon: Icons.phone,
+                          hinttext: 'Phone Number',
+                        ),
                         sizedbox_h10,
                         CustomTextFieldWidget(
-                            subtextsize: subtextsize,
-                            icon: Icons.email,
-                            hinttext: 'Email ID'), // Third card
+                          subtextsize: subtextsize,
+                          icon: Icons.email,
+                          hinttext: 'Email ID',
+                        ),
                         sizedbox_h30,
-                        GlobalCustomButton(
-                            textsize: textsize,
-                            text: 'Get OTP',
-                            size: value.maxWidth,
-                            route: '/otp',),
                       ],
                     ),
                   ),
-                ),
+                ],
               ),
-            ],
+            ),
           ),
-        );
-      }),
-    );
+        ),
+        bottomNavigationBar: GlobalCustomButton(
+          textsize: textsize,
+          text: 'Get OTP',
+          size: constraints.maxWidth,
+          route: '/otp',
+        ),
+      );
+    });
   }
 }

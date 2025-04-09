@@ -16,6 +16,7 @@ class MyApp extends StatelessWidget {
       color: Colors.white,
       routerConfig: appRouter,
       theme: ThemeData(
+         useMaterial3: true,
         scaffoldBackgroundColor:
             Colors.white, // This sets background color for all Scaffolds
       ),

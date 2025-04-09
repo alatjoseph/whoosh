@@ -27,7 +27,7 @@ class ServiceDetailsScreen extends StatelessWidget {
                 // Padding applied to the rest of the screen
                 Expanded(
                   child: Padding(
-                    padding: const EdgeInsets.only(left: 18.0, right: 18),
+                    padding: const EdgeInsets.only(left: 10.0, right: 10),
                     child: ListView(
                       children: [
                         ...List.generate(
@@ -40,6 +40,7 @@ class ServiceDetailsScreen extends StatelessWidget {
                             ),
                           ),
                         ),
+                        sizedbox_h30
                       ],
                     ),
                   ),

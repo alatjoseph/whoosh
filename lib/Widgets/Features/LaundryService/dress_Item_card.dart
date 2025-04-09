@@ -9,10 +9,11 @@ class DressItemCard extends StatelessWidget {
   const DressItemCard({
     super.key,
     required this.widget,
+  
+
   });
 
   final ShopServiceListWidget widget;
-
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -66,38 +67,38 @@ class DressItemCard extends StatelessWidget {
               ],
             ),
             Spacer(),
-            Center(
-              child: Container(
-                width: widget.size.maxWidth * 0.3,
-                height: widget.size.maxHeight * 0.05,
-                decoration: BoxDecoration(
-                  color: primaryColour,
-                  borderRadius: BorderRadius.circular(10),
-                  border: Border.all(
-                    color: buttonColour,
-                    width: 2,
-                  ),
-                ),
-                child: TextButton(
-                  onPressed: () {},
-                  style: TextButton.styleFrom(
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                    backgroundColor: primaryColour,
-                  ),
-                  child: Text(
-                    'ADD',
-                    textAlign: TextAlign.center,
-                    style: GoogleFonts.poppins(
-                      color: blackColour,
-                      fontSize: widget.size.maxWidth * 0.035,
-                      fontWeight: FontWeight.w400,
+            InkWell(
+              onTap: (){
+                
+              },
+              child: Center(
+                child: Container(
+                  width: widget.size.maxWidth * 0.25,
+                  height: widget.size.maxHeight * 0.035,
+                  decoration: BoxDecoration(
+                    color: primaryColour,
+                    borderRadius: BorderRadius.circular(10),
+                    border: Border.all(
+                      color: buttonColour,
+                      width: 2,
                     ),
                   ),
+                 
+                    child: Center(
+                      child: Text(
+                        'ADD',
+                        textAlign: TextAlign.center,
+                        style: GoogleFonts.poppins(
+                          color: blackColour,
+                          fontSize: widget.size.maxWidth * 0.035,
+                          fontWeight: FontWeight.w400,
+                        ),
+                      ),
+                    ),
+                  ),
                 ),
-              ),
             ),
+          
             sizedbox_w20,
           ],
         ),

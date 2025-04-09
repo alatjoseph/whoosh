@@ -25,7 +25,7 @@ class BillDetaisContainer extends StatelessWidget {
         ),
         sizedbox_h10, 
         Container(
-          height: constraints.maxHeight * 0.2,
+          height: constraints.maxHeight * 0.182,
           decoration: BoxDecoration(
               border: Border.all(color: greyColour)),
           child: Column(
@@ -34,7 +34,7 @@ class BillDetaisContainer extends StatelessWidget {
               bill_text("Total Items", "2"),
               bill_text("Delivery Fee", "2"),
               bill_text("Discount Fee", "2"),
-              bill_text("To Pay", "2", color: greenColour,fontWeight: FontWeight.bold ),
+              bill_text("To Pay", "200", color: greenColour,fontWeight: FontWeight.bold ),
             ],
           ),
         )

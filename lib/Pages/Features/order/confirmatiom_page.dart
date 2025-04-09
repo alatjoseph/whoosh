@@ -1,22 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:whoosh/Utils/colours.dart';
-import 'package:whoosh/Utils/constant_widgets.dart';
-import 'package:whoosh/Widgets/Features/order/Confirmation%20screen/bill_detais_container.dart';
-import 'package:whoosh/Widgets/Global/appbar_global.dart';
-import 'package:whoosh/Widgets/Global/global_custom_button.dart';
+import 'package:whoosh/Widgets/Features/order/Confirmation%20screen/shedule_details_container.dart';
 
+import '../../../Utils/constant_widgets.dart';
+import '../../../Widgets/Features/order/Confirmation screen/bill_detais_container.dart';
 import '../../../Widgets/Features/order/Confirmation screen/ordered_item_card.dart';
-import '../../../Widgets/Features/order/Confirmation screen/shedule_details_container.dart';
-
+import '../../../Widgets/Global/appbar_global.dart';
+import '../../../Widgets/Global/global_custom_button.dart';
 class OrderConfirmatiomPage extends StatelessWidget {
   const OrderConfirmatiomPage({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: LayoutBuilder(
-        builder: (context, constraints) {
-          return ListView(
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        return Scaffold(
+          body: ListView(
             children: [
               Global_AppBar_Widget(
                 title: 'Order Confirmation',
@@ -28,9 +27,19 @@ class OrderConfirmatiomPage extends StatelessWidget {
                 padding: const EdgeInsets.symmetric(horizontal: 18.0),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
+                  
                   children: [
+      //                SizedBox(
+      //   height: constraints.maxHeight * 0.35, // Adjust the height as needed
+      //   child: ListView.builder(
+      //     itemCount: 4,
+      //     itemBuilder: (context, index) {
+      //       return OderedItemCard(constraints: constraints);
+      //     },
+      //   ),
+      // ),
                     ...List.generate(
-                      2,
+                      12,
                       (index) => OderedItemCard(
                         constraints: constraints,
                       ),
@@ -40,19 +49,21 @@ class OrderConfirmatiomPage extends StatelessWidget {
                       constraints: constraints,
                     ),
                     sizedbox_h20,
-                    BillDetaisContainer(constraints: constraints,)
+                    BillDetaisContainer(constraints: constraints),
+                   
                   ],
                 ),
               ),
-              GlobalCustomButton(
-                        textsize: constraints.maxWidth * 0.047,
-                        size: constraints.maxWidth,
-                        text: 'Proceed to Payment',
-                        route: '/addresspage'),
             ],
-          );
-        },
-      ),
+          ),
+          bottomNavigationBar: GlobalCustomButton(
+            textsize: constraints.maxWidth * 0.047,
+            size: constraints.maxWidth,
+            text: 'Proceed to Payment',
+            route: '/addresspage',
+          ),
+        );
+      },
     );
   }
 }

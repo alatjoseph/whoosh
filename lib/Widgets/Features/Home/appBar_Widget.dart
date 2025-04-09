@@ -32,14 +32,14 @@ class HomeScreen_AppBar_Widget extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Padding(
-              padding: const EdgeInsets.all(8.0),
+              padding: const EdgeInsets.only(left: 8.0,top: 18),
               child: Column(
                 
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Row(
                     mainAxisAlignment: MainAxisAlignment.start,
-                   
+                   crossAxisAlignment: CrossAxisAlignment.end,
                     children: [
                       const Icon(
                         Icons.location_pin,

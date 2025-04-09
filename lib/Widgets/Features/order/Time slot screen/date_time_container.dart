@@ -31,7 +31,7 @@ class DateTimeContainer extends StatelessWidget {
           'Date',
           style: GoogleFonts.poppins(
             fontSize: constraints.maxWidth * 0.035,
-            fontWeight: FontWeight.w400,
+            fontWeight: FontWeight.w500,
           ),
         ),
         sizedbox_h10,
@@ -76,7 +76,7 @@ class DateTimeContainer extends StatelessWidget {
         Text(
           'Time',
           style: GoogleFonts.poppins(
-            fontSize: constraints.maxWidth * 0.03,
+            fontSize: constraints.maxWidth * 0.035,
             fontWeight: FontWeight.w500,
             color: blackColour
           ),

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:whoosh/Pages/Features/account/account_page.dart';
 import 'package:whoosh/Pages/Features/home/home_screen.dart';
+import 'package:whoosh/Pages/Features/payment/payment_failed.dart';
+import 'package:whoosh/Pages/Features/payment/payment_success.dart';
 import 'package:whoosh/Utils/colours.dart';
 
 class Homepage extends StatefulWidget {
@@ -15,8 +17,8 @@ class _HomepageState extends State<Homepage> {
 
   final List<Widget> pages = [
       const HomeScreen(),
-      const Center(child: Text('Activities')),
-      const Center(child: Text('Cart')),
+      const PaymentSuccess(),
+      const PaymentFailed(),
       const AccountPage(),
   ];
 

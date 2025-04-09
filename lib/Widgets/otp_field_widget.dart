@@ -5,7 +5,7 @@ class OTPField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 70.0),
+      padding: const EdgeInsets.symmetric(horizontal: 50.0),
       child: PinCodeTextField(
         appContext: context,
         length: 4, 

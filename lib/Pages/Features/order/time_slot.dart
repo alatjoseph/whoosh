@@ -15,7 +15,8 @@ class TimeSlot extends StatelessWidget {
         return ListView(
           children: [
             SizedBox(
-              height: constraints.maxHeight- constraints.maxWidth/4,
+              
+              height: constraints.maxHeight - constraints.maxWidth* 0.3,
               child: ListView(
                 children: [
                   Global_AppBar_Widget(
@@ -42,24 +43,20 @@ class TimeSlot extends StatelessWidget {
                       ],
                     ),
                   ),
-                  
                   sizedbox_h20
                 ],
               ),
             ),
             Center(
-                    child: GlobalCustomButton(
-                        textsize: constraints.maxWidth * 0.047,
-                        size: constraints.maxWidth,
-                        text: 'Confirm Your Order',
-                        route: '/orderConfirmation'),
-                  ),
+              child: GlobalCustomButton(
+                  textsize: constraints.maxWidth * 0.047,
+                  size: constraints.maxWidth,
+                  text: 'Confirm Your Order',
+                  route: '/orderConfirmation'),
+            ),
           ],
         );
       }),
     );
   }
 }
-
-
-

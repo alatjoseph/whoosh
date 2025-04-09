@@ -17,22 +17,23 @@ class ShopDetailsScreen extends StatelessWidget {
           child: ListView(
             children: [
               Shop_Background_ImageCard(title: title, constraints: constraints),
-              SizedBox(
-                height: constraints.maxWidth*0.7,
-                child: ListView(children: [
-                  ShopServiceListWidget(
+              Expanded(
+                child: Padding(
+                  padding: const EdgeInsets.only(left: 8,right: 8),
+                  child: ShopServiceListWidget(
                     size: constraints,
                   ),
-                ]),
+                ),
               ),
-              GlobalCustomButton(
-                  textsize: constraints.maxWidth * 0.05,
-                  size: constraints.maxWidth,
-                  text: 'Schedule',
-                  route: '/timeSlot')
+             
             ],
           ),
         ),
+        bottomNavigationBar: GlobalCustomButton(
+                  textsize: constraints.maxWidth * 0.05,
+                  size: constraints.maxWidth,
+                  text: 'Schedule',
+                  route: '/timeSlot'),
       );
     });
   }

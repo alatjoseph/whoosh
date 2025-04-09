@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:lottie/lottie.dart';
 import 'package:whoosh/Utils/constant_widgets.dart';
 
 import '../../../Utils/colours.dart';
@@ -15,28 +16,16 @@ class PaymentFailed extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Stack(
-                alignment: Alignment.center,
-                children: [
-                  Container(
-                    width: 200,
-                    height: 200,
-                    decoration: const BoxDecoration(
-                      color:redColour,
-                      shape: BoxShape.circle,
-                    ),
-                  ),
-                  SizedBox(
-                    height: 130,
-                    width: 130,
-                    child: Image.asset(
-                      'assets/images/payment_failed.png',
-                      fit: BoxFit.contain,
-                    ),
-                  ),
-                ],
+              SizedBox(
+                height: constraints.maxWidth,
+                width: constraints.maxWidth*0.8,
+                child: Lottie.asset(
+                  'assets/images/payment_failed.json',
+                  fit: BoxFit.contain,
+                ),
               ),
-              sizedbox_h20,
+              
+              
               Text(
                 'FAILED !',
                 textAlign: TextAlign.center,

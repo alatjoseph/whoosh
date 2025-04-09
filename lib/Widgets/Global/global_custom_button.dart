@@ -24,7 +24,7 @@ class GlobalCustomButton extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.all(18.0),
       child: SizedBox(
-        height: size * 0.1,
+        height: size * 0.12,
         width: double.infinity,
         child: ElevatedButton(
           style: ElevatedButton.styleFrom(

@@ -1,8 +1,8 @@
-
 import 'package:flutter/material.dart';
 import 'package:whoosh/Widgets/Features/LaundryService/dress_Item_card.dart';
 
 import '../../../Utils/constant_widgets.dart';
+
 class ShopServiceListWidget extends StatefulWidget {
   ShopServiceListWidget({required this.size});
   final BoxConstraints size;
@@ -47,51 +47,58 @@ class _ShopServiceListWidgetState extends State<ShopServiceListWidget> {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        SizedBox(
-          height: widget.size.maxWidth *
-              0.3, // Height of the horizontal scroll area
-          child: ListView.builder(
-            scrollDirection: Axis.horizontal,
-            itemCount: avatars.length,
-            itemBuilder: (context, index) {
-              return GestureDetector(
-                onTap: () {
-                  setState(() {
-                    _selectedIndex = index;
-                  });
-                },
-                child: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 10),
-                  child: Column(
-                    children: [
-                      CircleAvatar(
-                        backgroundColor: _selectedIndex == index
-                            ? Colors.yellow
-                            : Colors.transparent,
-                        radius: widget.size.maxWidth * .11,
-                        child: CircleAvatar(
-                          radius: widget.size.maxWidth * .097,
-                          backgroundImage:
-                              const AssetImage('assets/images/logo.png'),
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal:  8.0),
+          child: SizedBox(
+            height: widget.size.maxWidth * 0.3,
+            child: ListView.builder(
+              scrollDirection: Axis.horizontal,
+              itemCount: avatars.length,
+              itemBuilder: (context, index) {
+                return GestureDetector(
+                  onTap: () {
+                    setState(() {
+                      _selectedIndex = index;
+                    });
+                  },
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 5),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        CircleAvatar(
+                          backgroundColor: _selectedIndex == index
+                              ? Colors.yellow
+                              : Colors.transparent,
+                          radius: widget.size.maxWidth * .1,
+                          child: CircleAvatar(
+                            radius: widget.size.maxWidth * .09,
+                            backgroundImage:
+                                const AssetImage('assets/images/logo.png'),
+                          ),
                         ),
-                      ),
-                      const SizedBox(height: 10),
-                      Text(
-                        'service[index]',
-                        style: TextStyle(
-                          fontWeight: FontWeight.w500,
-                          color: Colors.black,
+                        const SizedBox(height: 10),
+                        const Text(
+                          'Dry Cleaning',
+                          style: TextStyle(
+                            fontWeight: FontWeight.w500,
+                            color: Colors.black,
+                          ),
                         ),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
-                ),
-              );
-            },
+                );
+              },
+            ),
           ),
         ),
-        if (_selectedIndex != -1) sizedbox_h20,
-        ...List.generate(4, (index) => DressItemCard(widget: widget)),
+        if (_selectedIndex != -1)
+         
+              sizedbox_h20,
+              ...List.generate(22, (index) => SingleChildScrollView
+              (child: DressItemCard(widget: widget))),
+           
       ],
     );
   }

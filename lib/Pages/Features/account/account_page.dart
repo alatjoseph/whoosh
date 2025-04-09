@@ -32,13 +32,9 @@ class AccountPage extends StatelessWidget {
                     size: size,
                     title: "Saved",
                   ),
+                  
                   Account_Item_Card(
-                    icon: Icons.favorite_border,
-                    size: size,
-                    title: "Wishlist",
-                  ),
-                  Account_Item_Card(
-                    icon: Icons.favorite_border,
+                    icon: Icons.settings,
                     size: size,
                     title: "Account Settings",
                   ),
@@ -52,32 +48,42 @@ class AccountPage extends StatelessWidget {
                     size: size,
                     title: "Notification",
                   ),
-                  sizedbox_h30,
-                  Text('Logout',
-                      style: GoogleFonts.poppins(
-                          color: accountBlueColour,
-                          fontSize: size.maxWidth * 0.043,
-                          fontWeight: FontWeight.w500)),
+                  TextButton(
+                    onPressed: () {},
+                    child: Text('Logout',
+                        style: GoogleFonts.poppins(
+                            color: accountBlueColour,
+                            fontSize: size.maxWidth * 0.043,
+                            fontWeight: FontWeight.w500)),
+                  ),
                   sizedbox_h5,
-                  Text('About Us',
-                      style: GoogleFonts.poppins(
-                          color: accountBlueColour,
-                          fontSize: size.maxWidth * 0.043,
-                          fontWeight: FontWeight.w500)),
-                          sizedbox_h5,
-                  Text('Terms of use',
-                      style: GoogleFonts.poppins(
-                          color: accountBlueColour,
-                          fontSize: size.maxWidth * 0.043,
-                          fontWeight: FontWeight.w500)),
-                          sizedbox_h5,
-                  Text('Privacy Policy',
-                      style: GoogleFonts.poppins(
-                          color: accountBlueColour,
-                          fontSize: size.maxWidth * 0.043,
-                          fontWeight: FontWeight.w500)),
-                          sizedbox_h5,
-                
+                  TextButton(
+                    onPressed: () {},
+                    child: Text('About Us',
+                        style: GoogleFonts.poppins(
+                            color: accountBlueColour,
+                            fontSize: size.maxWidth * 0.043,
+                            fontWeight: FontWeight.w500)),
+                  ),
+                  sizedbox_h5,
+                  TextButton(
+                    onPressed: () {},
+                    child: Text('Terms of use',
+                        style: GoogleFonts.poppins(
+                            color: accountBlueColour,
+                            fontSize: size.maxWidth * 0.043,
+                            fontWeight: FontWeight.w500)),
+                  ),
+                  sizedbox_h5,
+                  TextButton(
+                    onPressed: () {},
+                    child: Text('Privacy Policy',
+                        style: GoogleFonts.poppins(
+                            color: accountBlueColour,
+                            fontSize: size.maxWidth * 0.043,
+                            fontWeight: FontWeight.w500)),
+                  ),
+                  sizedbox_h5,
                 ],
               ),
             ),
@@ -108,6 +114,7 @@ class Account_Item_Card extends StatelessWidget {
           children: [
             Icon(
               icon,
+              weight: 700,
             ),
             sizedbox_w10,
             Text(
